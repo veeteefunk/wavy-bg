@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animated Background</title>
+  </head>
+  <body>
+    <section>
+      <svg
+        width="100%"
+        height="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs></defs>
+        <path id="myID" d="" />
+      </svg>
+
+      <h2>Wavy Background</h2>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"
+      integrity="sha256-cyEXrJKjO3YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="wavify.js"></script>
+    <script src="jquery.wavify.js"></script>
+    <script>
+      var myWave = $("#myID").wavify({
+        height: 550,
+        bones: 6,
+        amplitude: 80,
+        color: "#62a6ff",
+        speed: 0.25
+      });
+    </script>
+  </body>
+</html>
